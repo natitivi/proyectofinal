@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Descripción del site-->
+    <meta name="description" content="Hospital de la Caridad de San Martín de Porres es una institución de salud que ofrece campañas de salud y atenciones médicas gratuitas para los pacientes más necesitados.">
+    <!--Keywords-->
+    <meta name="keywords" content="hospital de la caridad, hospital de la caridad de san martin de porres, hospital de san martin de porres, hospital de la caridad">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../imagenes/favicon-hospital-de-la-caridad.png">
+    <!--CSS boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Mi CSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!--Titulo de la página-->
+    <title> Reserva tu Cita </title>
+</head>
+
+<body>
+    <!--Navbar Buscador-->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand"></a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar en la página" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"> BUSCAR </button>
+            </form>
+        </div>
+    </nav>
+    <!--Contenedor de Logo e Inicio de sesión-->
+    <div class="gridContainer">
+        <div class="gridItem box2">
+            <a href="../index.html">
+            <img src="../imagenes/logo-hospital-de-la-caridad.png" alt="logo e isotipo de Hospital de la Caridad de San Martín de Porres">
+            </a>
+        </div>
+        <div class="gridItem box3">
+        <!--Contenedor de botón de INICIAR SESION-->
+        <div class="containerBodyCuenta">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar Sesión</button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                <h5 class="tituloInicioSesion" id="offcanvasRightLabel">Iniciar Sesión</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!--FORMULARIO al clickear INICIAR SESION-->
+                    <div class="contenedorFormulario">
+                        <!--espacio para ingresar correo electrónico-->
+                        <form method="post"> 
+                            <h2 class="formularioSesionSubtitulo">Correo electrónico</h2>
+                            <input class="formularioSesionSubtitulo1" type="email" placeholder="Correo electrónico" name="email"></p>
+                        </form>
+                        <!--espacio para ingresar contraseña-->
+                        <form method="post"> 
+                            <h2 class="formularioSesionSubtitulo">Contraseña</h2>
+                            <input class="formularioSesionSubtitulo1" type="password" placeholder="Contraseña" name="password"></p>
+                        </form>
+                        <!--botón de ENVIAR-->
+                        <form method="post"> 
+                            <input class="formularioEnviar" type="submit" value="ENVIAR">
+                        </form>
+                    </div>
+                    <!--FIN DE FORMULARIO-->
+                </div>
+                </div>
+        </div>
+        </div>
+    </div> 
+    <!--Navbar enlaces internos del website-->
+    <section>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"> <img src="../iconos/hamburguesa-icon.png" alt="ícono menú hamburguesa desplegable"> </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">  HOME  </a></li>
+                <li><a href="../paginas/especialidad.html">  ESPECIALIDADES  </a></li>
+                <li><a href="../paginas/servicio.html">  SERVICIOS  </a></li>
+                <li><a href="../paginas/cita.html">  CITAS  </a></li>
+                <li><a href="../paginas/contacto.html">  CONTÁCTANOS  </a></li>
+            </ul>
+        </nav>
+    </section>
+    <!--Imágenes que describen el propósito de la página-->
+    <section class="cabeceraImage">
+      <img src="../imagenes/reserva-cita.jpg" alt="doctor al lado de un calendario y persona tipeando">
+    </section>
+
+    <!--Solo título de la pagina para que el usuario no se pierda-->
+    <section class="descripcionReservaCita">
+        <h2> Estimado Paciente: </h2>
+        <p><p class="parrafo">
+          Recuerde que tiene 3 alternativas para sacar su cita.</p>
+          <ul>
+            <li class="textoReserva"> <img src="../iconos/n1.png" alt="ícono circular con el número uno"> Llamando a nuestra central telefónica (01)6202020</li>
+            <li class="textoReserva"> <img src="../iconos/n2.png" alt="ícono circular con el número uno"> Escribiendo a nuestro whatsapp a los números 989357998 y 989357999</li>
+            <li class="textoReserva1"> 
+                <img src="../iconos/n3.png" alt="ícono circular con el número uno"> <p>Llenando el formulario del siguiente enlace.</p>
+                <!--POP UP - Modal-->
+                <!-- Button trigger modal -->
+                <section class="btn-reserva">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                RESERVAR AQUÍ
+                </button>
+                </section>
+            </li>
+          </ul>
+        </p>
+    </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Reserva tu Cita</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!--Inicio Formulario-->
+              <div class="contenedorGeneral">
+                <div class="contenedorFormularioCitas">
+                    <form method="post"> <!--espacio para identificar tipo de documento de identidad-->
+                        <h2 class="formularioCitasSubtitulo">Tipo de documento</h2>
+                        <select class="formularioCita" name="Tipo de Documento">
+                        <option value="dni"> DNI </option>
+                        <option value="carnet"> Carnet de Extranjería </option>
+                        <option value="pasaporte"> Pasaporte </option>
+                        <option value="ruc"> RUC </option>
+                        </select>
+                    </form>
+            
+                    <form method="post"> <!--espacio para ingresar dovumento de identidad-->
+                        <h2 class="formularioCitasSubtitulo">Número de Documento</h2>
+                        <input class="formularioCita" type="number" placeholder="Número de documento" name="dni" minlength="8" maxlength="12"><br>
+                    </form>
+            
+                    <form method="post"> <!--espacio para seleccionar tipo de atención médica-->
+                        <h2 class="formularioCitasSubtitulo">Tipo de atención</h2>
+                        <select class="formularioCita" name="Tipo de atención">
+                        <option value="presencial"> Consulta médica en consultorio </option>
+                        <option value="online"> Consulta médica virtual </option>
+                        <option value="vacunas"> Vacuna Influenza </option>
+                        <option value="pruebacovid"> Pruebas COVID en sede </option>
+                        <option value="pruebadomicilio"> Prueba COVID a domicilio </option>
+                        </select>
+                    </form>
+            
+                    <form method="post"> <!--espacio para seleccionar especialidad-->
+                        <h2 class="formularioCitasSubtitulo">Especialidad</h2>
+                        <select class="formularioCita" name="Especialidad">
+                        <option value="cirugiacardio"> Cirugía cardiovascular </option>
+                        <option value="dermatologia"> Dermatología </option>
+                        <option value="gastro"> Gastroenterología </option>
+                        <option value="medicina"> Medicina general </option>
+                        <option value="medicinafisica"> Medicina física y de rehabilitación </option>
+                        <option value="nutricion"> Nutrición </option>
+                        <option value="odontologia"> Odontología </option>
+                        <option value="psicologia"> Psicología </option>
+                        </select>
+                    </form>
+            
+                    <form method="post"> <!--espacio para seleccionar turno de atención-->
+                        <h2 class="formularioCitasSubtitulo">Turno</h2>
+                        <select class="formularioCita" name="Especialidad" name="Turno de atención">
+                        <option value="time"> Mañana </option>
+                        <option value="time"> Tarde </option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            
+              <!--Fin Formulario-->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-cancelar" data-bs-dismiss="modal"> Cancelar </button>
+              <button type="button" class="btn btn-reserva-int"> Reservar </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <!--Fin POP UP - Modal-->
+      
+
+  <!--Footer de Página-->
+  <footer>
+    <div class="contenedorFooter">
+        <div class="itemFooter1">
+            <h4> Enlaces de Interés </h4>
+            <ul>
+                <li> Trabaja con nosotros </li>
+                <li> Términos y condiciones </li>
+                <li> Políticas de privacidad </li>
+                <li> Libro de reclamaciones </li>
+            </ul>
+        </div>                                       
+        <div class="itemFooter2">
+            <h4>Boletin Informativo</h4>
+            <p class="textFooterBoletin">Suscríbete a nuestro boletín semanal</p>
+            <!--espacio para ingresar el correo electrónico-->
+            <div class="contenedorSuscripcion">
+            <form action="#" method="post">
+                <input class="sendEmail" type="email" placeholder="Escribe tu correo electrónico" name="email">
+                <!--Botón de ENVIAR-->
+                <input class="parte2Submit" type="submit" value="ENVIAR">
+            </form>
+            </div>
+            <p class="textoCondicionSuscrip"> Suscribiéndote aceptas todos los Términos y Condiciones. </p>
+        </div>
+        <div class="itemFooter3">
+            <h4> Redes Sociales</h4>
+            <p> Encuéntranos en: 
+            <a href="https://www.facebook.com/HCSMPop/"><img class="footerImageRedes" src="../iconos/facebook-icon.png" alt="logo red social facebook"></a>
+            <a href="https://www.instagram.com/explore/locations/124790134807522/museo-casa-de-san-martin-de-porres/"><img class="footerImageRedes" src="../iconos/instagram-icon.png" alt="logo red social instagram"></a>
+            </p>
+        </div>
+    </div>
+    <div class="contenedorFooter1">
+        <div class="itemFooter4">
+            <p class="parte4texto"> Hospital de la Caridad de San Martin de Porres, 2022 </p>
+        </div>
+    </div>
+</footer>
+
+<!--JAVA Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

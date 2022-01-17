@@ -1,0 +1,1525 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*  Página Principal - Index*/
+/*  Navbar Buscador*/
+.form-control{
+    width: 18.75rem;
+}
+.d-flex .btn-outline-success {
+    border-color: rgb(98, 49, 109);
+    color: rgb(98, 49, 109);
+    width: 6.25rem;
+}
+.d-flex .btn-outline-success:hover{
+    background-color:rgb(98, 49, 109);
+    color: white;
+}
+
+/*  Contenedor de Logo e Inicio de Sesión*/
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 1.25rem;
+    grid-template-areas:
+    "box1 box1"
+    "box2 box3"
+    "box4 box4"
+}
+.gridItem {
+    background-color: transparent;
+    border: solid 0px black;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.box2 {
+    grid-area: box2;
+}
+.box3 {
+    text-decoration: none;
+    grid-area: box3;
+    justify-content:flex-end;
+    align-items:flex-end;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    color: rgb(98, 49, 109);
+    line-height: 1.8;
+    padding-right: 2rem;
+    border: solid 0px black;
+}
+
+/*  Inicio OffCanvas para registro de Inicio de Sesión*/
+.containerBodyCuenta .btn {
+    width: 6.25rem;
+}
+.containerBodyCuenta .btn:hover{
+    background-color:#123456;
+    color: white;
+    border-radius: 0.31rem;
+}
+.containerBodyCuenta .btn-secondary{
+    width: fit-content;
+}
+.contenedorFormulario{
+    margin: 1.88rem;
+}
+.tituloInicioSesion{
+    color: rgb(98, 49, 109);
+    font-weight: bolder;
+    margin-left: 1.88rem;
+    font-weight: bolder;
+    padding-top: 20px;
+    font-size: 23px;
+}
+.formularioSesionSubtitulo{
+    font-size: 0.84rem;
+    font-weight: bold;
+    font-size: 18px;
+}
+.formularioSesionSubtitulo1{
+    width: 18.75rem;
+    height: 1.75rem;
+    font-size: 0.95rem;
+    padding-left: 0.63rem;
+}
+.formularioEnviar{
+    color:white;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.88rem;
+    width: 7.5rem;
+    height: 2rem;
+    border-radius: 0.63rem;
+    margin: 0px;
+}
+.formularioEnviar:hover{
+    color:white;
+    background-color: #123456;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 7.5rem;
+    height: 2rem;
+    border-radius: 0.63rem;
+    margin: 0px;
+}
+
+/*  Enlaces internos de website*/
+section {
+    width: 100%;
+    background-color: rgb(98, 49, 109);
+}
+#btn-menu{
+    display: none;
+}
+section label {
+    display: none;
+    width: 3.44rem;
+    height: 3.44rem;
+    padding: 0.63rem;
+}
+section label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    font-weight: bolder;
+    justify-content: flex-end;
+}
+.menu li{
+    text-align: center;
+    flex-grow: 1;
+    letter-spacing: 0.5px;
+    text-align: center;
+    position: relative;
+    transition: all .3s;
+}
+.menu li span{
+    position: relative;
+}
+.menu li:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ffe601;
+    transition: all .35s;
+}
+.menu li:hover{
+    background: #ffe601;
+}
+.menu li a:hover{
+    color: rgb(98, 49, 109);
+    font-weight: bolder;
+}
+.menu li a {
+    display: block;
+    padding: 0.94rem 1.25rem;    
+    text-decoration: none;
+    color: #fff;
+}
+
+/*  Empieza container del Slider  */
+.containerSlider{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 20px;
+    z-index: 1;
+}
+.carousel{
+    width: 79rem;
+    height: auto;
+}
+.carousel-inner h2{
+    position: absolute;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    left: 60%;
+    top:65%;
+    transform: translate(-10%, -10%);
+    text-align: right;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #123456;
+    letter-spacing: 1.5px;
+}
+.carousel-inner h2.carouselRight{
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    top:65%;
+    transform: translate(-10%, -10%);
+    text-align: right;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25pt;
+    color: #123456;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.carousel-inner h2.carouselLeft{
+    position: absolute;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    top:15%;
+    transform: translate(-150%, 180%);
+    text-align: left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #123456;
+    letter-spacing: 1.5px;
+}
+.carousel-control-prev-icon {
+    background-color: grey;
+}
+.carousel-control-next-icon {
+    background-color: grey;
+}
+
+/*  Contenedor Contenido Página Principal  */
+.contenedorFlex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.contenedorFlex div.item{
+    background-color: rgb(219, 203, 223);
+    color: #123456;
+    font-size: 14pt;
+    margin: 1rem 3rem;
+    padding: 2rem;
+    flex: 1 400px;
+    border-radius: 30px;
+}
+.contenedorFlex2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.contenedorFlex div.item2{
+    background-color: rgb(219, 203, 223);
+    color: white;
+    flex: 1 400px;
+}
+.contenedorFlex div iframe{
+    width: auto;
+}
+h3{
+    font-weight: bold;
+}
+
+/*  Contenedor para el Footer */
+.contenedorFooter{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color:rgb(98, 49, 109);
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10pt;
+    padding: 40px 0px;
+}
+div .itemFooter1{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.itemFooter1 ul{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    align-items: center;
+}
+.itemFooter2 p{
+    margin: 0;
+    padding: 0;
+}
+.itemFooter2 form input.sendEmail {
+    border: solid 1px rgb(98, 49, 109);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:400px;
+    height: 30px;
+    padding: 10px;
+    font-size:medium;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+form .parte2Submit{
+    display: flex;
+    border: solid 1px rgb(98, 49, 109);
+    color:white; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    font-weight: bold; 
+    width:400px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 10px;
+    margin: 5px 0px;
+    justify-content: center;
+}
+form .parte2Submit:hover{
+    color:rgb(98, 49, 109); 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffe601;
+    font-weight: bold; 
+    width:400px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+.contenedorSuscripcion{
+    display: flex;
+    justify-content: center;
+}
+.footerImageRedes{
+    width: 45px;
+    height: 45px;
+    padding: 5px 0px 5px 5px;
+}
+.contenedorFooter1{
+    display: flex;
+    justify-content: end;
+    background-color: rgb(98, 49, 109);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0px 35px;
+    border-top: solid 0.5px white;
+}
+.parte4texto{
+    padding-top: 5px;
+}
+h4{
+    font-weight: bolder;
+}
+
+/*  Página Especialidades  */
+.cabeceraImage{
+    background-color: transparent;
+}
+.cabeceraImage img{
+    width: 100%; 
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+section.descripcionEspecialidad {
+    background-color: transparent;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+}
+.descripcionEspecialidad h2{
+    color: rgb(98, 49, 109);
+    font-weight: bolder;
+    margin: 1.5rem 3rem;
+    padding: 0rem 1rem;
+}
+.descripcionEspecialidad p{
+    margin: 0.5rem 3rem;
+    padding: 0rem 1rem;
+}
+.containerBody{
+    margin: 1.5rem 3rem;
+    padding: 0rem 1rem;
+}
+.doctoresLista {
+    display: flex;
+    align-items:left;
+    gap: 5px;
+}
+.accordion-body p{
+    font-weight: bold;
+}
+.cita {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding: 0px 40px;
+}
+.cita button{
+    background-color: black;
+}
+.cita a {
+    list-style-type: none;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: solid 0px black;
+    font-weight: bolder;
+    padding: 8px 30px;
+    border-radius: 8px;
+}
+.cita a:hover{
+    background-color:rgb(98, 49, 109);
+    color: white;
+}
+.accordion-item{
+    background-color: white;
+}
+.accordion-button{
+    background-color: rgb(98, 49, 109);
+    color: white;
+    font-weight: bolder;
+}
+.accordion-button:hover{
+    background-color: #ffe601;
+    color: rgb(98, 49, 109);
+    font-weight: bolder;
+}
+.listaDoctores{
+    margin: 0px;
+    padding: 0px;
+}
+.listaDoctores li{
+    list-style-type: none;
+    text-decoration: none;
+    border: solid 0px black;
+}
+/*  Página Servicios  */
+section.descripcionServicio {
+    background-color: transparent;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+}
+.descripcionServicio h2{
+    color: rgb(98, 49, 109);
+    font-weight: bolder;
+    margin: 1.5rem 3rem;
+    padding: 0rem 1rem;
+}
+.descripcionServicio p{
+    margin: 0.5rem 3rem;
+    padding: 0rem 1rem;
+}
+.listaHorario{
+    margin: 0px;
+    padding: 0px;
+}
+.listaHorario li{
+    list-style-type: none;
+    text-decoration: none;
+    border: solid 0px black;
+}
+.reserva {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding: 0px 40px;
+}
+.reserva a {
+    list-style-type: none;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: solid 0px black;
+    font-weight: bolder;
+    padding: 8px 0px;
+    border-radius: 8px;
+    background-color: black;
+}
+.reserva a:hover{
+    background-color:rgb(98, 49, 109);
+    color: white;
+}
+.reserva a img{
+    width: 40%;
+    height: 40%;
+}
+
+/*  Página Reserva de Citas  */
+section.descripcionReservaCita {
+    background-color: transparent;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+}
+.descripcionReservaCita ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 3rem 15rem;
+    padding-bottom: 3rem;
+}
+.descripcionReservaCita ul li{
+    padding-top: 2rem;
+}
+.descripcionReservaCita ul li img{
+    margin: 0rem 2rem;
+    width: 5rem;
+    height: 5rem;
+}
+.descripcionReservaCita h2{
+    color: rgb(98, 49, 109);
+    font-weight: bolder;
+    margin: 1.5rem 3rem;
+    padding: 0rem 1rem;
+}
+.descripcionReservaCita p{
+    margin: 0.5rem 3rem;
+    padding: 0rem 1rem;
+}
+li.textoReserva1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+li.textoReserva1 p{
+    margin: 0;
+    padding: 0;
+}
+li.textoReserva1 section{
+    height: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin-right: 7rem;
+}
+li.textoReserva1 section button{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedorFormularioCitas form{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px 10px 0px;
+}
+.contenedorFormularioCitas form h2.formularioCitasSubtitulo{
+    color: rgb(98, 49, 109);
+    justify-content: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-weight: bolder;
+}
+.modal-title{
+    font-weight: bolder;
+    color: rgb(98, 49, 109);
+    padding-left: 20px;
+}
+.textoReserva1 section{
+    background-color: transparent;
+}
+section .btn-reserva .btn{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font: white;
+    font-weight: bold;
+}
+section .btn-reserva .btn:hover{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(98, 49, 109);
+}
+.btn-cancelar{
+    background-color: white;
+    color: rgb(98, 49, 109);
+    border: solid 1px rgb(98, 49, 109);
+    font-weight: bolder;
+}
+.btn-reserva-int{
+    background-color: rgb(98, 49, 109);
+    color: white;
+    font-weight: bolder;
+}
+.btn-cancelar:hover{
+    background-color: black;
+    color: white;
+}
+.btn-reserva-int:hover{
+    background-color: black;
+    color: white;
+}
+
+/*  Página de Contacto  */
+section.descripcionContacto{
+    background-color: transparent;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+}
+.descripcionContacto h2{
+    color: rgb(98, 49, 109);
+    font-weight: bolder;
+    margin: 1.5rem 3rem;
+    padding: 0rem 1rem;
+}
+.descripcionContacto p{
+    margin: 0.5rem 3rem;
+    padding: 0rem 1rem;
+}
+
+.medio{
+    padding: 3rem 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.medio img{
+    width: 10rem;
+    height: 10rem;
+}
+.medio section{
+    width: 70%;
+    background-color: transparent;
+    margin-left: 3rem;
+}
+
+
+/*  Página Servicios  */
+section.descripcionServicio {
+    background-color: transparent;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+}
+.descripcionServicio h2{
+    color: rgb(98, 49, 109);
+    font-weight: bolder;
+    margin: 1.5rem 3rem;
+    padding: 0rem 1rem;
+}
+.descripcionServicio p{
+    margin: 0.5rem 3rem;
+    padding: 0rem 1rem;
+}
+
+.descripcionServicio h2{
+    color: rgb(98, 49, 109);
+    font-weight: bolder;
+}
+
+.listaHorario{
+    margin: 0px;
+    padding: 0px;
+}
+
+.listaHorario li{
+    list-style-type: none;
+    text-decoration: none;
+    border: solid 0px black;
+}
+
+.reserva {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding: 0px 40px;
+}
+
+.reserva a {
+    list-style-type: none;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: solid 0px black;
+    font-weight: bolder;
+    padding: 8px 0px;
+    border-radius: 8px;
+    background-color: black;
+}
+
+.reserva a:hover{
+    background-color:rgb(98, 49, 109);
+    color: white;
+}
+
+.reserva a img{
+    width: 40%;
+    height: 40%;
+}
+
+/*  Página Reserva de Citas  */
+section.descripcionReservaCita {
+    background-color: transparent;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+}
+.descripcionReservaCita ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 3rem 15rem;
+    padding-bottom: 3rem;
+}
+.descripcionReservaCita ul li{
+    padding-top: 2rem;
+}
+.descripcionReservaCita ul li img{
+    margin: 0rem 2rem;
+    width: 5rem;
+    height: 5rem;
+}
+.descripcionReservaCita h2{
+    color: rgb(98, 49, 109);
+    font-weight: bolder;
+    margin: 1.5rem 3rem;
+    padding: 0rem 1rem;
+}
+.descripcionReservaCita p{
+    margin: 0.5rem 3rem;
+    padding: 0rem 1rem;
+}
+li.textoReserva1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: rgb(98, 49, 109);
+}
+li.textoReserva{
+    color: rgb(98, 49, 109);
+}
+li.textoReserva1 section{
+    height: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin-right: 7rem;
+}
+li.textoReserva1 section button{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedorGeneral {
+    padding: 30px;
+    margin: 30px;
+    border: solid 0px rgb(98, 49, 109);
+    margin: 10px;
+}
+
+div div.contenedorFormularioCitas{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: solid 0px black;
+}
+
+div div h3.formularioCitasTitulo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    font-size: 20pt;
+    color: rgb(98, 49, 109);
+    padding: 40px;
+}
+
+div div h2.formularioCitasSubtitulo{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    font-size: 13pt;
+    color: black;
+    border: solid transparent 1px;
+}
+.textoReserva1 section{
+    background-color: transparent;
+}
+section .btn-reserva .btn{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    font: white;
+}
+section .btn-reserva .btn:hover{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(98, 49, 109);
+}
+
+/*  Página de Contacto  */
+.medio{
+    padding: 3rem 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.medio img{
+    width: 10rem;
+    height: 10rem;
+}
+.medio section{
+    width: 70%;
+    background-color: transparent;
+    margin-left: 3rem;
+}
+.subtituloContacto{
+    font-weight: bolder;
+    color: #123456;
+}
+.contactoTexto{
+    color: rgb(98, 49, 109);
+}
+.contactoTextoCursiva{
+    color: rgb(98, 49, 109);
+    font-style: italic;
+}
+
+/* Página en mantenimiento */
+.mantenimiento{
+    border: black;
+    padding: 50px;
+    background-color: white;
+}
+.imagenMantenimiento{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.backForward{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.backForward a{
+    text-decoration: none;
+    color: #3b3939;
+    list-style-type: none;
+    background-color: #ffa700;
+    font-weight: bolder;
+    width:300px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0px;
+}
+.backForward a:hover{
+    color: white;
+    background-color: #123456;
+    align-items: center;
+}
+
+/*  Media Queries*/
+@media (max-width:1024px) {
+    .descripcionReservaCita ul {
+        list-style-type: none;
+        text-decoration: none;
+        margin: 3rem 10rem;
+        padding-bottom: 3rem;
+    }
+    .textoReserva{
+        display: flex;
+        flex-direction: row;
+    }
+    li.textoReserva1 section{
+        height: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        margin-right: 4rem;
+    }
+}
+@media (max-width:861px) {
+    .box2 img {
+        width: 520.5px;
+        height: 85.5px;
+    }
+    .itemFooter1{
+        display: none;
+    }
+    .containerBody{
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .carousel-inner h2{
+        top:58%;
+        font-size: 18pt;
+    }
+    .carousel-inner h2.carouselRight{
+        margin: 7px;
+        padding: 10px 20px 10px 0px;
+        top:10%;
+        transform: translate(-10%, -10%);
+        font-size: 17pt;
+    }
+    .carousel-inner h2.carouselLeft{
+        transform: translate(-150%, 135%);
+        font-size: 17pt;
+    }
+    .descripcionReservaCita ul {
+        margin: 3rem;
+        padding-bottom: 3rem;
+    }    
+    .descripcionReservaCita ul li{
+        padding-top: 2rem;
+    }
+    .descripcionReservaCita ul li img{
+        margin: 0rem 2rem;
+        width: 5rem;
+        height: 5rem;
+    }
+    .textoReserva{
+        align-items: center;
+    }
+    li.textoReserva1 section{
+        height: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        margin-right: 6rem;
+    }
+    .textoReserva1 p{
+        width: 60%;
+        padding: 0;
+        margin: 0;
+    }
+    .medio section{
+        width: 60%;
+        background-color: transparent;
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width:768px) {
+    section label {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        background: rgb(98, 49, 109);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+        z-index: 2;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li {
+        border-top: solid 1px white;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+    .box2 img {
+        width: 415px;
+        height: 68px;
+    }
+    .descripcionReservaCita ul {
+        margin: 1rem;
+        padding-left: 0;
+    }    
+    .contenedorSuscripcion{
+        display: flex;
+        justify-content:flex-start;
+    }
+    .carousel-inner h2{
+        font-size: 16pt;
+    }
+    .carousel-inner h2.carouselLeft{
+        transform: translate(-150%, 125%);
+        font-size: 15.5pt;
+    }
+}
+
+@media (max-width:640px) {
+    .contenedorFlex div.item{
+        color: white;
+        margin: 1rem 2rem;
+        padding: 2rem;
+        flex: 1 400px;
+    }    
+    .box2 img {
+        width: 307px;
+        height: 50px;
+    }
+    .descripcionReservaCita ul li img{
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+        padding-right: 0;
+    }
+    .descripcionReservaCita ul li.textoReserva{
+        display: flex;
+        flex-direction: row;
+    }
+    .itemFooter2{
+        margin: 0rem 3rem;
+        flex: 1 300px;
+    }
+    .textFooterBoletin{
+        font-size: 14px;
+    }
+    .itemFooter3{
+        display: flex;
+        align-items: center;
+        margin: 0rem 3rem;
+        margin-top: 2rem;
+        flex: 1 300px;
+    }
+    .itemFooter3 p{
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        flex: 1 300px;
+        font-size: 14px;
+    }
+    .itemFooter3 p a{
+        width: 50px;
+        height: 50px;
+    }
+    .carousel-inner h2{
+        top:58%;
+        font-size: 13pt;
+    }
+    .carousel-inner h2.carouselRight{
+        font-size: 12.5pt;
+    }
+    .carousel-inner h2.carouselLeft{
+        transform: translate(-155%, 140%);
+        font-size: 11.5pt;
+    }
+    .item2 img{
+        width: 100%;
+    }
+    .medio{
+        padding: 1.5rem 4rem;
+        font-size: 11pt;
+    }
+    .medio img{
+        width: 8.8rem;
+        height: 8.5rem;
+    }
+    .medio section{
+        width: 60%;
+        background-color: transparent;
+        margin-left: 3rem;
+    }
+    .descripcionContacto h2{
+        font-size: 12pt;
+        font-weight: bolder;
+        color: rgb(98, 49, 109);
+        padding: 1rem 5rem;
+    }
+    .descripcionContacto p{
+        font-size: 11pt;
+        padding: 1rem 5rem;
+    }
+    .medio{
+        padding: 1.5rem 4rem;
+        font-size: 11pt;
+    }
+    .medio img{
+        width: 8.8rem;
+        height: 8.5rem;
+    }
+    .medio section{
+        width: 60%;
+        background-color: transparent;
+        margin-left: 3rem;
+    }
+    section.descripcionContacto{
+        background-color: transparent;
+    }
+    .descripcionContacto h2{
+        font-size: 12pt;
+        font-weight: bolder;
+        color: rgb(98, 49, 109);
+        padding: 1rem 5rem;
+    }
+    .descripcionContacto p{
+        font-size: 11pt;
+        padding: 1rem 5rem;
+    }
+}
+
+@media (max-width:640px) {
+    .item2 img{
+        width: 100%;
+    }
+    .reserva {
+        display: flex;
+        justify-content: center;
+        padding: 20px 40px;
+    }
+    .descripcionReservaCita h2{
+        font-size: 15pt;
+    }
+    .descripcionReservaCita p{
+        font-size: 11pt;
+    }
+    .textoReserva{
+        font-size: 11pt;
+    }
+    .textoReserva1{
+        font-size: 11pt;
+    }
+    .descripcionReservaCita ul li img{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        padding-right: 0;
+    }
+    .contenedorFooter{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .contenedorSuscripcion{
+        display: flex;
+        justify-content:center;
+    }
+    .itemFooter3{
+        padding: 0rem 3rem;
+    }
+}
+
+@media (max-width:540px) {
+    .contenedorFlex div.item{
+        margin: 0.3rem 1.3rem;
+        padding: 1.2rem;
+        flex: 1 400px;
+    }
+    .carousel-inner h2{
+        font-size: 10pt;
+    }
+    .carousel-inner h2.carouselRight{
+        font-size: 11pt;
+    }
+    .carousel-inner h2.carouselLeft{
+        transform: translate(-165%, 92%);
+        font-size: 10pt;
+    }
+    section.descripcionEspecialidad {
+        background-color: transparent;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 13pt;
+    }
+    .descripcionEspecialidad h2{
+        color: rgb(98, 49, 109);
+        font-weight: bolder;
+        margin: 1.5rem 2rem;
+        padding: 0;
+    }
+    .descripcionEspecialidad p{
+        margin: 0rem 2rem;
+        padding: 0;
+    }
+    section.descripcionServicio {
+        background-color: transparent;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 13pt;
+    }
+    .descripcionServicio h2{
+        color: rgb(98, 49, 109);
+        font-weight: bolder;
+        margin: 1.5rem 2rem;
+        padding: 0;
+    }
+    .descripcionServicio p{
+        margin: 0rem 2rem;
+        padding: 0;
+    }
+    li.textoReserva1 section{
+        height: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        margin-right: 3.7rem;
+    }
+    .medio img{
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+@media (max-width:480px) {
+    .carousel-inner h2{
+        font-size: 9pt;
+    }
+    .carousel-inner h2.carouselRight{
+        font-size: 9pt;
+    }
+    .carousel-inner h2.carouselLeft{
+        transform: translate(-165%, 95%);
+        font-size: 8pt;
+    }
+    .contenedorFlex div.item{
+        padding: 1rem;
+    }
+    .containerBody{
+        margin: 0rem 1rem;
+        padding: 1rem;
+    }
+    .medio img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .medio section{
+        width: 50%;
+        background-color: transparent;
+        margin-left: 2rem;
+        font-size: 10pt;
+    }
+    .descripcionContacto h2{
+        font-size: 11pt;
+    }
+    .descripcionContacto p{
+        font-size: 10pt;
+    }
+    .textoReserva{
+        margin-right: 1rem;
+    }
+    .itemFooter3 p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .itemFooter3 p a img{
+        width: 50px;
+        height: 50px;
+    }
+    .itemFooter3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .itemFooter3 h4{
+        font-size: 12pt;
+    }
+    .itemFooter3 p{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .medio img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .medio section{
+        width: 50%;
+        background-color: transparent;
+        margin-left: 2rem;
+        font-size: 10pt;
+    }
+    .descripcionContacto h2{
+        font-size: 11pt;
+    }
+    .descripcionContacto p{
+        font-size: 10pt;
+    }
+}
+
+@media (max-width:396px) {
+    .form-control{
+        width: 16rem;
+    }
+    .carousel-inner h2{
+        font-size: 7pt;
+        width: 200px;
+        left: 165px;
+        top:91px;
+    }
+    .carousel-inner h2.carouselRight{
+        font-size: 7pt;
+        padding: 10px;
+        width: 200px;
+        left: 150px;
+        top: 9px;
+    }
+    .carousel-inner h2.carouselLeft{
+        transform: translate(-80%, 95%);
+        font-size: 7pt;
+        width: 200px;
+    }
+    .box3{
+        display: none;
+    }
+    .accordion-body{
+        font-size: 11pt;
+    }
+    .cita {
+        display: flex;
+        justify-content: center;
+        padding: 20px 40px;
+    }    
+    .cabeceraImage img{
+        display: none;
+    }
+    .contenedorFlex div.item{
+        padding: 0.5rem;
+    }
+    .contenedorSuscripcion{
+        display: flex;
+        justify-content:center;
+    }    
+    .itemFooter2 form input.sendEmail {
+        width:300px;
+        height: 30px;
+    }
+    form .parte2Submit{
+        width:300px;
+        height: 30px;
+    }
+    form .parte2Submit:hover{
+        width:300px;
+        height: 30px;
+    }
+    .parte4texto{
+        font-size: 11pt;
+    }
+    .cabeceraImage{
+        display: none;
+    }
+    .contenedorContacto{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .medio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 1rem;
+        padding: 0;
+        width: 350px;
+    }
+    .medio img{
+        padding: 0;
+        margin: 0;
+    }
+    .medio section{
+        padding: 0;
+        margin:1rem 0rem;
+        width: 100%;
+    }
+    .medio section p{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0rem 3rem;
+    }
+    section.descripcionContacto{
+        margin: 0;
+    }
+    .descripcionContacto h2{
+        margin: 1.5rem 0rem 0rem 0rem;
+        text-align: center;
+    }
+    .descripcionContacto p{
+        margin:0;
+        margin:0;
+        text-align: center;
+    }
+}
+
+@media (max-width:393px) {
+    .textoReserva1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .textoReserva1 p{
+        width: 60%;
+        padding: 1rem 0rem;
+        margin: 0;
+    }
+}
+@media (max-width:393px) {
+    .textoReserva1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .textoReserva1 p{
+        width: 60%;
+        padding: 1rem 0rem;
+        margin: 0;
+    }
+}
+@media (max-width:320px) {
+    .form-control{
+        width: 11rem;
+    }
+    .d-flex .btn-outline-success {
+        width: 4rem;
+        font-size: 10pt;
+        padding: 0;
+    }
+    .box2 img{
+        width: 250px;
+        height: 41px;
+    }
+    .containerSlider{
+        display: none;
+    }
+    .contenedorFlex{
+        padding: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .contenedorFlex h3{
+        font-size: 12pt;
+    }
+    .contenedorFlex p{
+        font-size: 10pt;
+    }
+    .contenedorFlex div.item{
+        background-color: transparent;
+        color: black;
+        margin: 0.1rem 0.1rem;
+        padding: 0.5rem;
+        flex: 1 200px;
+    }
+    .contenedorFlex div iframe{
+        width: 100%;
+    }
+    .contenedorFlex div.item2{
+        background-color: white;
+    }    
+    section.descripcionEspecialidad {
+        background-color: transparent;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 11.5pt;
+    }
+    .descripcionEspecialidad h2{
+        color: rgb(98, 49, 109);
+        font-weight: bolder;
+        margin: 1.5rem 2rem;
+        padding: 0;
+        font-size: 16pt;
+    }
+    .descripcionEspecialidad p{
+        margin: 0rem 2rem;
+        padding: 0;
+    }
+    section.descripcionServicio {
+        background-color: transparent;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 11.5pt;
+    }
+    .descripcionServicio h2{
+        color: rgb(98, 49, 109);
+        font-weight: bolder;
+        margin: 1.5rem 2rem;
+        padding: 0;
+        font-size: 16pt;
+    }
+    .descripcionServicio p{
+        margin: 0rem 2rem;
+        padding: 0;
+    }
+    li.textoReserva1{
+        display: flex;
+        flex-direction: row;
+    }
+    li.textoReserva1 p{
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    .btn-reserva{
+        padding-top: 0.5rem;
+    }
+    .accordion-body{
+        font-size: 10pt;
+    }
+    .cita {
+        display: flex;
+        justify-content: center;
+        padding: 20px 40px;
+    }    
+    .cita a{
+        font-size: 11px;
+    }
+    .containerBody{
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    .descripcionReservaCita h2{
+        font-size: 12pt;
+        margin: 1.5rem;
+    }
+    .descripcionReservaCita p{
+        font-size: 12pt;
+        margin: 2rem;
+        padding-bottom: 0;
+    }
+    .descripcionReservaCita p.parrafo{
+        font-size: 12pt;
+        margin: 0rem 1.5rem;
+        padding-bottom: 0;
+    }
+    .descripcionReservaCita ul{
+        margin: 0;
+        padding: 0;
+    }
+    .descripcionReservaCita ul li img{
+        height: 3rem;
+        width: 3rem;
+    }
+    .itemFooter2 form input.sendEmail {
+        width:230px;
+        height: 30px;
+    }
+    form .parte2Submit{
+        width:230px;
+        height: 30px;
+    }
+    form .parte2Submit:hover{
+        width:230px;
+        height: 30px;
+    }
+    .itemFooter2 h4{
+        font-size: 12pt;
+    }
+    .parte4texto{
+        font-size: 8.5pt;
+    }
+}
